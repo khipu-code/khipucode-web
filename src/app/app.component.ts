@@ -3,11 +3,11 @@ import {
   OnInit,
   Renderer2,
   HostListener,
-  Inject
+  Inject,
+  OnDestroy
 } from "@angular/core";
 import { Location } from "@angular/common";
 import { DOCUMENT } from "@angular/common";
-
 import Chart from "chart.js";
 
 @Component({
@@ -15,7 +15,8 @@ import Chart from "chart.js";
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"]
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
+  isCollapsed = true;
   constructor(
     private renderer: Renderer2,
     public location: Location,
@@ -37,7 +38,6 @@ export class AppComponent implements OnInit {
       }
     }
   }
-  isCollapsed = true;
 
   ngOnInit() {
     this.onWindowScroll(event);
