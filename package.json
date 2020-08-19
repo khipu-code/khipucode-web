@@ -20,14 +20,13 @@
     "@angular/platform-browser": "9.0.6",
     "@angular/platform-browser-dynamic": "9.0.6",
     "@angular/router": "9.0.6",
-    "bootstrap": "4.5.2",
     "chart.js": "2.8.0",
     "core-js": "3.2.1",
     "jw-bootstrap-switch-ng2": "2.0.5",
     "ngx-bootstrap": "5.1.2",
     "nouislider": "11.1.0",
     "rxjs": "6.5.4",
-    "tslib": "1.13.0",
+    "tslib": "1.11.1",
     "zone.js": "0.10.2"
   },
   "devDependencies": {
@@ -49,8 +48,6 @@
     "protractor": "5.4.3",
     "ts-node": "8.6.2",
     "tslint": "6.0.0",
-    "typescript": "3.9.7"
-  },
-  "keywords": [],
-  "description": ""
+    "typescript": "3.7.5"
+  }
 }
